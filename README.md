@@ -1,22 +1,30 @@
 # Take home test (Full stack) Laravel 8, Inertia.js and Vue 3
 
+## Install
 
-## Step 1
-- using the free (Tailwind UI components)[https://tailwindui.com/preview]
-- Build a home page that shows the upcoming events in a table that is paginated.
-- The table should have the ability to search the events based on event name and category
-- The table should ability to filter the events to a date range
-- Create a link on the hope page to allow users to submit a new event, users need to be registered to do submit events
--
-## Step 2
-- Refactor the Input.vue component to use the new Vue 3 composition API, ***bonus points if you are able to use a hook for watching the value change***
-- Events submitted need to be hidden from the home page until they’re approved, so admin users should be able to see the events submitted and approve them as needed
-- Admin should be able to delete events, but in doing so they should see a model confirming they want to actually delete the event.
+once you've cloned the repository locally, run.
 
-## Things we are looking for.
+```bash
+composer install && npm ci
+```
+Once you've done that you should set up your local database connections and copy over the `.env.example` and update the `.env.testing` to work with your local testing databse.
 
-### Backend
-- knowledge querying the data using Eloquent , leveraging scopes and making the most efficient queries possible.
-- ability to create a schema based on the criteria
-- write tests to show things work for both backend and the Inertia side using [claudiodekker/inertia-laravel-testing](https://github.com/claudiodekker/inertia-laravel-testing)
+You should have access the following locally.
 
+- PHP 7.4
+- postgres 12+ if needed you can install [DBngin](https://dbngin.com/)
+
+Once those are configured, you can run 
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+Which will create the following user to login with.
+
+```
+username: admin@realtor.com
+password: password
+```
+
+follow the instructions in the [the pitch](https://www.notion.so/aryeo/Aryeo-Full-Stack-Engineering-Project-d814733e3e614a019f391b0816551bdf) to add the listings table view.
