@@ -1,4 +1,4 @@
-# Aryeo Full-Stack Engineering Project - Laravel 8, Inertia.js, and Vue 3
+# Aryeo Fullstack Engineering Project - Laravel 8, Inertia.js, and Vue 3
 
 ## Install & Getting Set Up 
 
