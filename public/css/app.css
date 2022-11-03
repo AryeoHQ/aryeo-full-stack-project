@@ -11308,19 +11308,19 @@ select {
   flex: none;
 }
 
-.flex-grow-0 {
+.grow-0 {
   flex-grow: 0;
 }
 
-.flex-grow {
+.grow {
   flex-grow: 1;
 }
 
-.flex-shrink-0 {
+.shrink-0 {
   flex-shrink: 0;
 }
 
-.flex-shrink {
+.shrink {
   flex-shrink: 1;
 }
 
@@ -14650,12 +14650,12 @@ select {
   outline-offset: 2px;
 }
 
-.outline-white {
+.outline-white outline-2 outline-dotted outline-offset-2 {
   outline: 2px dotted white;
   outline-offset: 2px;
 }
 
-.outline-black {
+.outline-black outline-2 outline-dotted outline-offset-2 {
   outline: 2px dotted black;
   outline-offset: 2px;
 }
@@ -26820,11 +26820,11 @@ select {
   white-space: nowrap;
 }
 
-.overflow-ellipsis {
+.text-ellipsis {
   text-overflow: ellipsis;
 }
 
-.overflow-clip {
+.text-clip {
   text-overflow: clip;
 }
 
