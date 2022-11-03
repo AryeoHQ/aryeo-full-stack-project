@@ -24,7 +24,7 @@ php artisan migrate:fresh --seed
 This will create the following user to login with:
 
 ```
-username: admin@realtor.com
+username: tony@starkindustries.com
 password: password
 ```
 
