@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::factory()->create(['name' => 'Mr. Tucker Cohen', 'email' => 'admin@realtor.com']);
+        $user = User::factory()->create(['name' => 'Tony Stark', 'email' => 'tony@starkindustries.com']);
 
         Listing::factory()
             ->count(10000)

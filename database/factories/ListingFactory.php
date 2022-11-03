@@ -11,13 +11,6 @@ use Illuminate\Support\Str;
 class ListingFactory extends Factory
 {
     /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = Listing::class;
-
-    /**
      * Define the model's default state.
      *
      * @return array

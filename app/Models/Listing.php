@@ -10,8 +10,11 @@ class Listing extends Model
     use HasFactory;
 
     public const DRAFT = 'draft';
+
     public const FOR_SALE = 'for sale';
+
     public const UNDER_CONTRACT = 'under contract';
+
     public const SOLD = 'sold';
 
     public const STAUSES = [
