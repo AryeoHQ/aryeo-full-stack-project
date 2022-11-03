@@ -22,11 +22,11 @@ class AddressFactory extends Factory
     public function definition()
     {
         return [
-            'address_line_1' => $this->faker->streetAddress,
-            'address_line_2' => $this->faker->secondaryAddress,
-            'city' => $this->faker->city,
-            'state' => $this->faker->state,
-            'zip' => $this->faker->postcode,
+            'address_line_1' => $this->faker->streetAddress(),
+            'address_line_2' => $this->faker->secondaryAddress(),
+            'city' => $this->faker->city(),
+            'state' => $this->faker->state(),
+            'zip' => $this->faker->postcode(),
         ];
     }
 }
