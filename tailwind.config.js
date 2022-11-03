@@ -1,5 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+let colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
@@ -11,6 +13,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans]
+      },
+      colors: {
+        yellow: colors.amber,
+        green: colors.emerald,
+        purple: colors.violet
       }
     }
   },
