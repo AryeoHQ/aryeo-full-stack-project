@@ -1,9 +1,9 @@
 <template>
   <breeze-authentication-card>
     <template #logo>
-      <inertia-link href="/">
+      <Link href="/">
         <breeze-application-logo class="w-20 h-20 fill-current text-gray-500" />
-      </inertia-link>
+      </Link>
     </template>
 
     <breeze-validation-errors class="mb-4" />
@@ -58,12 +58,9 @@
       </div>
 
       <div class="flex items-center justify-end mt-4">
-        <inertia-link
-          :href="route('login')"
-          class="underline text-sm text-gray-600 hover:text-gray-900"
-        >
+        <Link :href="route('login')" class="underline text-sm text-gray-600 hover:text-gray-900">
           Already registered?
-        </inertia-link>
+        </Link>
 
         <breeze-button
           class="ml-4"
@@ -78,6 +75,7 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/inertia-vue3'
 import BreezeApplicationLogo from '@/Components/ApplicationLogo'
 import BreezeAuthenticationCard from '@/Components/AuthenticationCard'
 import BreezeButton from '@/Components/Button'
@@ -88,6 +86,7 @@ import BreezeValidationErrors from '@/Components/ValidationErrors'
 
 export default {
   components: {
+    Link,
     BreezeApplicationLogo,
     BreezeAuthenticationCard,
     BreezeButton,

@@ -8,9 +8,9 @@
             <div class="flex">
               <!-- Logo -->
               <div class="shrink-0 flex items-center">
-                <inertia-link :href="route('dashboard')">
+                <Link :href="route('dashboard')">
                   <breeze-application-logo class="block h-9 w-auto" />
-                </inertia-link>
+                </Link>
               </div>
 
               <!-- Navigation Links -->
@@ -142,6 +142,7 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/inertia-vue3'
 import BreezeApplicationLogo from '@/Components/ApplicationLogo'
 import BreezeDropdown from '@/Components/Dropdown'
 import BreezeDropdownLink from '@/Components/DropdownLink'
@@ -150,6 +151,7 @@ import BreezeResponsiveNavLink from '@/Components/ResponsiveNavLink'
 
 export default {
   components: {
+    Link,
     BreezeApplicationLogo,
     BreezeDropdown,
     BreezeDropdownLink,

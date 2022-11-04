@@ -1,9 +1,9 @@
 <template>
   <breeze-authentication-card>
     <template #logo>
-      <inertia-link href="/">
+      <Link href="/">
         <breeze-application-logo class="w-20 h-20 fill-current text-gray-500" />
-      </inertia-link>
+      </Link>
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/inertia-vue3'
 import BreezeAuthenticationCard from '@/Components/AuthenticationCard'
 import BreezeApplicationLogo from '@/Components/ApplicationLogo'
 import BreezeButton from '@/Components/Button'
@@ -49,6 +50,7 @@ import BreezeValidationErrors from '@/Components/ValidationErrors'
 
 export default {
   components: {
+    Link,
     BreezeAuthenticationCard,
     BreezeApplicationLogo,
     BreezeButton,
