@@ -1,9 +1,9 @@
 <template>
   <breeze-authentication-card>
     <template #logo>
-      <inertia-link href="/">
+      <Link href="/">
         <breeze-application-logo />
-      </inertia-link>
+      </Link>
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
@@ -22,12 +22,12 @@
           Resend Verification Email
         </breeze-button>
 
-        <inertia-link
+        <Link
           :href="route('logout')"
           method="post"
           as="button"
           class="underline text-sm text-gray-600 hover:text-gray-900"
-          >Log Out</inertia-link
+          >Log Out</Link
         >
       </div>
     </form>
@@ -35,12 +35,14 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/inertia-vue3'
 import BreezeApplicationLogo from '@/Components/ApplicationLogo'
 import BreezeAuthenticationCard from '@/Components/AuthenticationCard'
 import BreezeButton from '@/Components/Button'
 
 export default {
   components: {
+    Link,
     BreezeApplicationLogo,
     BreezeAuthenticationCard,
     BreezeButton
