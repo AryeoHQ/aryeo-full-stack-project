@@ -11,7 +11,7 @@
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^0.5",
-        "laravel/framework": "^9.38",
+        "laravel/framework": "^9.48",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "tightenco/ziggy": "^1.0"
